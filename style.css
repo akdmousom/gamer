@@ -693,12 +693,12 @@ font-weight: 600;
     }
 
     .overlay {
-        left: 205px;
+        left: 212px;
         top: 0;
         position: absolute;
         background: rgba(0, 0, 0, 0.6);
-        height: 93%;
-        width: 45.5%;
+        height: 92%;
+        width: 44.5%;
         border: 1px solid #FF42A5;
         border-radius: 12px;
         transition: 1ms ease-in-out;
