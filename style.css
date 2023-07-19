@@ -11,6 +11,12 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.title-color{
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
 /* header section style start */
 
@@ -125,13 +131,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 55px ;
+    margin-top: 55px;
 
 }
 
-.wag-img{
+.wag-img {
     width: 50%;
 }
+
 .wag-info {
     text-align: right;
 }
@@ -166,6 +173,86 @@
 
 }
 
+.wag-after{
+    font-size: 1.2rem;
+}
+/* Online game funny video */
+.ogfv-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+
+}
+
+.ogfv-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.ogfv-des {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.card-text{
+    color: #534C64;
+font-size: 1.3rem;
+font-weight: 500;
+line-height: 30px; /* 150% */
+text-align: left;
+padding-left: 60px;
+}
+
+.card{
+    position: relative;
+}
+
+.overlay{
+    left: 66px;
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    height: 86%;
+    width: 72%;
+    border:  1px solid #FF42A5 ;
+    border-radius: 12px;
+    transition: 1ms ease-in-out;
+    display: none;
+    cursor: pointer;
+
+}
+
+.content{
+    color: white;
+    margin: 50% auto;
+}
+
+.content-des{
+    color: #F948B2;
+}
+
+.ogfv-cards:hover .overlay{
+
+    transition: 1ms ease-in-out;
+    display: block;
+
+}
+
+/*  */
 
 
 
@@ -302,26 +389,27 @@
     .we-are-gamer {
         flex-direction: column;
         width: 100%;
-    
+
     }
-    
-    .wag-img img{
+
+    .wag-img img {
 
         width: 100%;
-       
+
     }
+
     .wag-info {
         text-align: center;
     }
-    
+
     .wag-title {
-    
+
         text-align: center;
         font-size: 1.5rem;
         font-weight: 700;
-    
+
     }
-    
+
     .wag-des {
         color: #534C64;
         text-align: center;
@@ -331,7 +419,7 @@
         width: 100%;
         /* 166.667% */
     }
-    
+
     .wag-btn {
         border-radius: 48px;
         background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -341,13 +429,64 @@
         border: 0;
         padding: 10px 20px;
         margin: 20px 0;
-    
-    
+
+
     }
 
-    .wag-after{
+    .wag-after {
         text-align: center;
-        font-size: 12px;
+        font-size: 1.2rem;
+    }
+
+
+    /* Card section */
+
+    .ogfv-section {
+
+        margin-top: 50px;
+    
+    }
+    
+    .ogfv-title {
+        color: #0B0223;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .ogfv-des {
+        color: #534C64;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .cards-container {
+       flex-direction: column;
+       gap: 10px;
+    }
+    
+    .card-text{
+        color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    text-align: center;
+    padding-left: 0px;
+    }
+    
+    .overlay{
+        left: 17px;
+        top: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        height: 86%;
+        width: 92%;
+        border:  1px solid #FF42A5 ;
+        border-radius: 12px;
+        transition: 1ms ease-in-out;
+        display: none;
+        cursor: pointer;
+    
     }
 
 
